@@ -27,7 +27,7 @@ paru -S bspwm sxhkd kitty rofi polybar picom dunst nitrogen slim ttf-roboto lxap
 
 Now, we get the dotfiles themselves:
 ```bash
-git clone https://github.com/grumpoo/dotfileus
+git clone https://github.com/grumpoo/dots
 ```
 
 </details>
@@ -39,7 +39,7 @@ Once we have all the shit downloaded/installed, it's time for <b>step 2</b>.
   
 First thing we do is copy the files for the home directory:
 ```bash
-cd dotfiles; cp .config/ .local/ .mpd/ .ncmpcpp/ .wallpapers/ .gtkrc-2.0 .zshrc .vimrc .Xresources .xinitrc ~/
+cd dots; cp .config/ .local/ .mpd/ .ncmpcpp/ .wallpapers/ .gtkrc-2.0 .zshrc .vimrc .Xresources .xinitrc ~/
 ```
 Now, we copy the shit for the root directory:
 ```bash
@@ -54,7 +54,7 @@ If you see the <b>Killer fish from San Diego</b> pfp in the middle, then CONGRAT
 
 The only thing left to now is to delete the ``dotfiles`` folder:
 ```bash
-rm -rf dotfiles/
+rm -rf dots/
 ```
 
 For Vim, we need <a href=https://github.com/junegunn/vim-plug>Vim-plug</a> for the plugins:
