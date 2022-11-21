@@ -1,10 +1,9 @@
 configuration {
   display-run: "Rakstīt:";
   display-drun: "Aplikācijas:";
-  display-window: "Windows:";
   show-icons: true;
   font: "Iosevka Nerd Font 11";
-  modi: "window,run,drun";
+  modi: "run,drun";
 }
 
 @theme "/dev/null"
