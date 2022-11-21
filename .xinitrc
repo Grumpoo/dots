@@ -9,7 +9,7 @@ xrdb -merge ~/.Xresources
 xsetroot -cursor_name left_ptr
 
 # Autostart.
-# otd &
+otd &
 
 # Fix slow app opening.
 dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
