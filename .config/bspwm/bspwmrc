@@ -21,7 +21,7 @@ $HOME/.config/polybar/launch.sh &
 bspc monitor DP-0 -d 1 2 3 4 5 6 7 8
 bspc monitor HDMI-0 -d 9 0
 
-### MAIN SHIT ###
+### MAIN ###
 bspc config border_width               2
 bspc config window_gap                 10
 bspc config split_ratio                0.5
