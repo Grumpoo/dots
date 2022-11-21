@@ -68,7 +68,7 @@ XF86AudioPlay
   mpc toggle
 
 
-### BSPWM SHIT ###
+### BSPWM ###
 # Restart bspwm.
 super + shift + r
 	bspc wm -r
