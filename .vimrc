@@ -1,4 +1,4 @@
-" Main shit.
+" Main.
 set encoding=UTF-8
 set nocompatible
 filetype off
@@ -8,7 +8,7 @@ set number
 set relativenumber
 set ruler
 
-" GVim stuff.
+" GVim.
 set guioptions -=m 
 set guioptions -=T
 set guifont=Iosevka\ Nerd\ Font\ Mono\ 14
