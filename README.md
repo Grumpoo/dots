@@ -1,5 +1,3 @@
-<p align=center>Welcome to my dotfiles repository!</p>
-
 ## What do I use?
 * Distro: Arch Linux (best distro ong)
 * Window Manager: bspwm
