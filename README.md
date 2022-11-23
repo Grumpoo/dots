@@ -62,4 +62,9 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 ```
 Then, open vim and type ``:PlugInstall``.
 
+Optionally, you can change the folder colours with ``papirus-folders``:
+```bash
+papirus-folders -C yaru* -t ePapirus-Dark
+```
+*Note: To find out what other colours it has, write the ``papirus-folders -l`` command.
 </details>
