@@ -37,11 +37,11 @@ Once we have all the shit downloaded/installed, it's time for <b>step 2</b>.
   
 First thing we do is copy the files for the home directory:
 ```bash
-cd dots; cp .config/ .local/ .mpd/ .ncmpcpp/ .wallpapers/ .gtkrc-2.0 .zshrc .vimrc .Xresources .xinitrc ~/
+cd dots; cp -r .config/ .local/ .mpd/ .ncmpcpp/ .wallpapers/ .gtkrc-2.0 .zshrc .vimrc .Xresources .xinitrc ~/
 ```
 Now, we copy the shit for the root directory:
 ```bash
-sudo cp etc/ usr/ /
+sudo cp -r etc/ usr/ /
 ```
 After you've done that, make some files executable:
 ```bash
