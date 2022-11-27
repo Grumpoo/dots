@@ -14,7 +14,7 @@ The following rice has a dual monitor configuration, so you need to change the c
 
 The same thing goes for the Latvian text and localization in this rice (yes I know I could have made a normal rice with English text, BUT NAH I AM JUST STUPID :DD).
 
-Also, for the love of God, <b>don't use my Pipewire config</b>, unless you also play <a href=https://osu.ppy.sh>osu!</a>, a free to play rhythm game that works better on Linux than it does on Windows (lmao).
+Also, for the love of God, <b>don't use my Pipewire config</b>, unless you also play <a href=https://osu.ppy.sh>osu!</a>, a free to play rhythm game that works better on Linux than it does on Windows, because of audio latency (lmao).
 
 ## Installation.
 
