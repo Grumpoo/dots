@@ -12,7 +12,7 @@
 ## Disclaimer!
 The following rice has a dual monitor configuration, so you need to change the config files to match your preference.
 
-The same thing goes for the Latvian text and localization in this rice (yes I know I could have made a normal rice with English text, BUT NAH I AM JUST STUPID :DD).
+The same thing goes for the Latvian text and localization in this rice, you may need Photoshop skills to change the login screen text for SLiM.
 
 Also, for the love of God, <b>don't use my Pipewire config</b>, unless you also play <a href=https://osu.ppy.sh>osu!</a>, a free to play rhythm game that works better on Linux than it does on Windows, because of audio latency (lmao).
 
@@ -37,13 +37,9 @@ Once we have all the shit downloaded/installed, it's time for <b>step 2</b>.
 <details>
 <summary>Copying the files to the appropriate locations:</summary>
   
-First thing we do is copy the files for the home directory:
+First thing we do is copy the files for the home and root directories:
 ```bash
-cd dots; cp -r .config/ .local/ .mpd/ .ncmpcpp/ .wallpapers/ .gtkrc-2.0 .zshrc .vimrc .Xresources .xinitrc ~/
-```
-Now, we copy the shit for the root directory:
-```bash
-sudo cp -r etc/ usr/ /
+cd dots; cp -r .config/ .local/ .mpd/ .ncmpcpp/ .wallpapers/ .gtkrc-2.0 .zshrc .vimrc .Xresources .xinitrc ~/; sudo cp -r etc/ usr/ /
 ```
 After you've done that, make some files executable:
 ```bash
