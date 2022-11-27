@@ -1,3 +1,5 @@
+<p align=center><img src=https://i.imgur.com/Yeo44OC.png style="width:450px"></a></p>
+
 ## What do I use?
 * Distro: Arch Linux (best distro ong)
 * Window Manager: bspwm
