@@ -23,7 +23,7 @@ export PATH="$HOME/.local/bin:$PATH"
 alias ls='ls --color=auto'
 alias poweroff='systemctl poweroff'
 alias reboot='systemctl reboot'
-alias update='paru; paru -S linux-xanmod-bin; sudo update-grub; sudo flatpak update'
+alias update='paru; paru -S --noconfirm linux-xanmod-bin; sudo update-grub; sudo flatpak update'
 
 # Configs.
 alias bspwmconf='gvim ~/.config/bspwm/bspwmrc'
