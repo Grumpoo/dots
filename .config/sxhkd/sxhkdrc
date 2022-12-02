@@ -5,7 +5,7 @@ super + Return
 
 # Rofi (drun, run, powermenu).
 super + d ; {d,shift + d,x}
-	rofi -show {drun,run,p -modi p:powermenu -lines 0}
+	rofi -show {drun -show-icons,run,p -modi p:powermenu -lines 0}
 
 # File manager.
 super + e
