@@ -1,7 +1,6 @@
 configuration {
   display-run: "Rakstīt:";
   display-drun: "Aplikācijas:";
-  show-icons: true;
   font: "Iosevka Nerd Font 11";
   modi: "run,drun";
 }
