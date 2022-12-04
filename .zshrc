@@ -15,7 +15,7 @@ bindkey "^[[1;5D" beginning-of-line
 bindkey "^[[1;5C" end-of-line
 
 # Environment variables.
-export EDITOR=gvim
+export EDITOR=code
 export BROWSER=firefox
 export PATH="$HOME/.local/bin:$PATH"
 
@@ -26,11 +26,10 @@ alias reboot='systemctl reboot'
 alias update='paru; paru -S --noconfirm linux-xanmod-bin; sudo update-grub; sudo flatpak update'
 
 # Configs.
-alias bspwmconf='gvim ~/.config/bspwm/bspwmrc'
-alias sxhkdconf='gvim ~/.config/sxhkd/sxhkdrc'
-alias polybarconf='gvim ~/.config/polybar/config.ini'
-alias vimconf='gvim ~/.vimrc'
-alias zshconf='gvim ~/.zshrc'
+alias bspwmconf='code ~/.config/bspwm/bspwmrc'
+alias sxhkdconf='code ~/.config/sxhkd/sxhkdrc'
+alias polybarconf='code ~/.config/polybar/config.ini'
+alias zshconf='code ~/.zshrc'
 
 # Customization.
 PS1="%B%F{green}%~%b %B%F{blue} %b%F{white}"
