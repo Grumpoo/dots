@@ -8,11 +8,6 @@ set number
 set relativenumber
 set ruler
 
-" GVim.
-set guioptions -=m 
-set guioptions -=T
-set guifont=Iosevka\ Nerd\ Font\ Mono\ 14
-
 " NERDTree.
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
