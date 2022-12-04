@@ -23,9 +23,9 @@ super + v
 ctrl + Print
 	 flameshot gui
 
-# GVIm.
+# Text editor.
 super + shift + v
-	gvim
+	code
 
 # Lock the screen.
 ctrl + alt + shift + l
