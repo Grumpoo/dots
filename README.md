@@ -53,7 +53,7 @@ The only thing left to now is to delete the ``dotfiles`` folder:
 rm -rf dots/
 ```
 
-For Vim, we need <a href=https://github.com/junegunn/vim-plug>Vim-plug</a> for the plugins:
+For Vim, we need <a href=https://github.com/junegunn/vim-plug>Vim-plug</a> for the plugins (if you plan on using Vim instead of VSC xd):
 ```bash
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
