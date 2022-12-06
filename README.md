@@ -5,7 +5,7 @@
 * Window Manager: bspwm
 * Terminal Emulator: Kitty (nyaa~)
 * Audio Server: Pipewire (because I play osu! lol)
-* Text Editor: GVim (weird but it works)
+* Text Editor: Visual Studio Code (got lazy to use Vim xddd)
 * Login Manager:  SLiM
 * Application Launcher: rofi
 
