@@ -6,7 +6,7 @@ msg_y                   40%
 
 ### SESSION NAME. ###
 session_color               #F8F8F8
-session_font                RobotoCondensed:size=16:dpi=120
+session_font                RobotoCondensed:size=0:dpi=120
 session_x                   50%
 session_y                   92%
 
