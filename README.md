@@ -66,3 +66,7 @@ papirus-folders -C yaru* -t ePapirus-Dark
 ```
 *Note: To find out what other colours it has, write the ``papirus-folders -l`` command.
 </details>
+
+## Inspiration:
+* <a href=https://github.com/Syndrizzle/hotfiles/tree/bspwm>Syndrizzle</a> for the whole rice inspiration! :D
+* <a href=https://grumpoo.github.io/skin>My skin xddd</a>
