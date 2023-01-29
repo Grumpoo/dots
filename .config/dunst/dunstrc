@@ -7,7 +7,7 @@
     width = 300
     height = 300
     origin = top-right
-    offset = 10x38
+    offset = 10x50
     scale = 0
     notification_limit = 0
 
@@ -67,7 +67,7 @@
     icon_position = left
 
     min_icon_size = 48
-    max_icon_size = 48
+    max_icon_size = 64
 
     # icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
 
@@ -104,13 +104,13 @@
     background = "#181818"
     foreground = "#585858"
     frame_color = "#585858"
-    timeout = 10
+    timeout = 5
 
 [urgency_normal]
     background = "#181818"
     foreground = "#F8F8F8"
     frame_color = "#F8F8F8"
-    timeout = 20
+    timeout = 10
 
 [urgency_critical]
     background = "#AB4642"
