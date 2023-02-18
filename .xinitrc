@@ -14,5 +14,5 @@ otd &
 # Fix slow app opening.
 dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
 
-# Launch the window manager (bspwm).
+# Launch the window manager.
 exec bspwm

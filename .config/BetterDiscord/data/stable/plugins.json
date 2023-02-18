@@ -1,0 +1,14 @@
+{
+    "PluginRepo": true,
+    "ThemeRepo": true,
+    "BDFDB": true,
+    "AppNotifications": true,
+    "ZeresPluginLibrary": true,
+    "BetterNsfwTag": true,
+    "BetterVolume": true,
+    "ChannelTabs": false,
+    "FreeEmojis": true,
+    "OpenSteamLinksInApp": true,
+    "PersonalPins": true,
+    "QuickLastMessage": true
+}

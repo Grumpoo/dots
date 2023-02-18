@@ -20,7 +20,6 @@
 /* All colors are in RGB format (red, green, blue) use: https://www.google.com/search?q=colorpicker	*/
 
 :root {
-	/* --font:						Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;					/*	General Font			*/
 	--font:						Roboto Condensed;
 	--settingsicons:			1;						/*	Use Settings Icons in User/Server/Channel Settings: 1 = yes, 0 = no			*/
 	

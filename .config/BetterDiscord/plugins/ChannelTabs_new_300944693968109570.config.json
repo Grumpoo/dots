@@ -1,0 +1,44 @@
+{
+    "settings": {
+        "tabs": [
+            {
+                "name": "@whotfiszanee",
+                "url": "/channels/@me/1070396728223744112",
+                "selected": true,
+                "currentStatus": "offline",
+                "iconUrl": "https://cdn.discordapp.com/avatars/1070385782143062169/ccca1c28d61e3f0d99fcc26ff9d7b72d.webp?size=40",
+                "channelId": "1070396728223744112",
+                "minimized": true
+            }
+        ],
+        "favs": [],
+        "favGroups": [],
+        "showTabBar": true,
+        "showFavBar": false,
+        "reopenLastChannel": false,
+        "showFavUnreadBadges": true,
+        "showFavMentionBadges": true,
+        "showFavTypingBadge": true,
+        "showEmptyFavBadges": false,
+        "showTabUnreadBadges": true,
+        "showTabMentionBadges": true,
+        "showTabTypingBadge": true,
+        "showEmptyTabBadges": false,
+        "showActiveTabUnreadBadges": false,
+        "showActiveTabMentionBadges": false,
+        "showActiveTabTypingBadge": false,
+        "showEmptyActiveTabBadges": false,
+        "compactStyle": false,
+        "privacyMode": false,
+        "radialStatusMode": false,
+        "tabWidthMin": 100,
+        "showFavGroupUnreadBadges": true,
+        "showFavGroupMentionBadges": true,
+        "showFavGroupTypingBadge": true,
+        "showEmptyFavGroupBadges": false,
+        "showQuickSettings": true,
+        "showNavButtons": true,
+        "alwaysFocusNewTabs": false,
+        "useStandardNav": true
+    }
+}
