@@ -23,17 +23,17 @@ export PATH="$HOME/.local/bin:$PATH"
 alias ls='ls --color=auto'
 alias poweroff='systemctl poweroff'
 alias reboot='systemctl reboot'
-alias update='paru; paru -S --noconfirm linux-xanmod-bin; sudo update-grub; sudo flatpak update'
+alias update='paru; sudo update-grub; sudo flatpak update'
 
 # Configs.
 alias bspwmconf='code ~/.config/bspwm/bspwmrc'
 alias sxhkdconf='code ~/.config/sxhkd/sxhkdrc'
-alias polybarconf='code ~/.config/polybar/config.ini'
+alias polybarconf='code ~/.config/polybar'
 alias zshconf='code ~/.zshrc'
 
 # Customization.
 PS1="%B%F{green}%~%b %B%F{blue} %b%F{white}"
-RPROMPT="%F{black}%*"
+RPROMPT="%F{white}%*"
 
 # Custom Plugins.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
