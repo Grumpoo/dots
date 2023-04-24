@@ -1,10 +1,10 @@
 /**
 * @name ChannelTabs
 * @displayName ChannelTabs
-* @source https://github.com/l0c4lh057/BetterDiscordStuff/blob/master/Plugins/ChannelTabs/ChannelTabs.plugin.js
-* @patreon https://www.patreon.com/l0c4lh057
-* @authorId 226677096091484160
-* @invite YzzeuJPpyj
+* @source https://github.com/samfundev/BetterDiscordStuff/blob/master/Plugins/ChannelTabs/ChannelTabs.plugin.js
+* @donate https://paypal.me/samfun123
+* @authorId 76052829285916672
+* @version 2.6.9
 */
 /*@cc_on
 @if (@_jscript)
@@ -54,19 +54,24 @@ module.exports = (() => {
 					github_username: "samfundev",
 				}
 			],
-			version: "2.6.6",
+			version: "2.6.9",
 			description: "Allows you to have multiple tabs and bookmark channels",
-			github: "https://github.com/l0c4lh057/BetterDiscordStuff/blob/master/Plugins/ChannelTabs/",
-			github_raw: "https://raw.githubusercontent.com/l0c4lh057/BetterDiscordStuff/master/Plugins/ChannelTabs/ChannelTabs.plugin.js"
+			github: "https://github.com/samfundev/BetterDiscordStuff/blob/master/Plugins/ChannelTabs/",
+			github_raw: "https://raw.githubusercontent.com/samfundev/BetterDiscordStuff/master/Plugins/ChannelTabs/ChannelTabs.plugin.js"
 		},
 		changelog: [
 			{
-				"title": "Fixed",
-				"type": "fixed",
-				"items": [
-					"Restored context menus for channels, DMs, and guilds",
-					"Fixed for BD 1.8.0",
-					"Requires ZeresPluginLibrary to be 2.0.7"
+				title: "Fixed",
+				type: "fixed",
+				items: [
+					"Fixed tooltip causing a crash",
+				]
+			},
+			{
+				title: "Improved Stability",
+				type: "improved",
+				items: [
+					"Discord updates should cause less crashes/bugs",
 				]
 			}
 		]
@@ -99,27 +104,75 @@ module.exports = (() => {
 
 			//#region Module/Variable Definitions
 
-			const { WebpackModules, PluginUtilities, DiscordModules, ReactComponents, ReactTools, Settings, Modals } = Api;
+			const { PluginUtilities, DiscordModules, ReactComponents, ReactTools, Settings, Modals } = Api;
 			const { React, NavigationUtils, SelectedChannelStore, SelectedGuildStore, ChannelStore, GuildStore, UserStore, UserTypingStore, Permissions } = DiscordModules;
 			const { ContextMenu, Patcher, Webpack } = new BdApi("ChannelTabs");
-			const DiscordConstants = {
-				ChannelTypes: Webpack.getModule(Webpack.Filters.byProps("GUILD_TEXT"), { searchExports: true })
-			};
-			const Textbox = WebpackModules.find(m => m.defaultProps && m.defaultProps.type == "text");
-			const UnreadStateStore = WebpackModules.find(m => m.isEstimated);
-			const Flux = WebpackModules.getByProps("connectStores");
-			const MutedStore = WebpackModules.getByProps("isMuted", "isChannelMuted");
-			const PermissionUtils  = WebpackModules.getByProps("can", "canManageUser");
-			const UserStatusStore = DiscordModules.UserStatusStore;
-			const Spinner = WebpackModules.getModule(m => m.toString().includes("spinningCircle"));
-			const Tooltip = WebpackModules.getModule((m) => m?.toString().includes("shouldShowTooltip") && m?.Positions);
-			const Slider = WebpackModules.getModule(m => m.toString().includes(`"[UIKit]Slider.handleMouseDown(): assert failed: domNode nodeType !== Element"`));
-			const NavShortcuts = WebpackModules.getByProps("NAVIGATE_BACK", "NAVIGATE_FORWARD");
 
-			const Close = WebpackModules.find(m => m.toString().includes("M18.4 4L12 10.4L5.6 4L4 5.6L10.4 12L4 18.4L5.6 20L12 13.6L18.4 20L20 18.4L13.6 12L20 5.6L18.4 4Z"));
-			const PlusAlt = WebpackModules.find(m => m.toString().includes("15 10 10 10 10 15 8 15 8 10 3 10 3 8 8 8 8 3 10 3 10 8 15 8"));
-			const LeftCaret = WebpackModules.find(m => m.toString().includes("18.35 4.35 16 2 6 12 16 22 18.35 19.65 10.717 12"));
-			const RightCaret = WebpackModules.find(m => m.toString().includes("8.47 2 6.12 4.35 13.753 12 6.12 19.65 8.47 22 18.47 12"));
+			function getModule(filter, options = {}) {
+				const foundModule = options.fail ? undefined : Webpack.getModule(filter, options);
+
+				if (!foundModule) {
+					missingModule(options);
+					if (options.onFail) options.onFail(options);
+				}
+
+				return foundModule;
+			}
+
+			function getStack() {
+				const original = Error.prepareStackTrace;
+				Error.prepareStackTrace = (_, stackTraces) => stackTraces;
+
+				const stack = new Error().stack.slice(1);
+
+				Error.prepareStackTrace = original;
+				return stack;
+			}
+
+			if (this.dismissWarning) this.dismissWarning()
+			this.dismissWarning = null;
+			let missingFeatures = [];
+			function missingModule({ name = "<unnamed>", feature, fatal = false }) {
+				const stack = getStack();
+				const index = stack.findIndex(site => site.getFunctionName() === "getModule");
+				const trace = stack.filter((_, i) => i > index).join("\n");
+				console.warn(`Could not find '${name}' module.\n${trace}`);
+				if (fatal) throw `Could not find '${name}' module.`;
+				if (feature != null) {
+					missingFeatures.push(feature);
+
+					if (dismissWarning) dismissWarning()
+					const content = BdApi.DOM.parseHTML(`<span style="background: white; color: var(--color); padding: 1px 3px; margin-right: 3px; border-radius: 5px;">ChannelTabs</span> These features are unavailable: ${missingFeatures.join(", ")}`, true);
+					dismissWarning = BdApi.UI.showNotice(content, { type: "warning" })
+				}
+			}
+
+			class FakeUnreadStateStore extends require("events").EventEmitter {
+				getUnreadCount() { return 0; }
+				getMentionCount() { return 0; }
+				isEstimated() { return false; }
+				hasUnread() { return false; }
+			}
+
+			const { byProps, byStrings } = Webpack.Filters;
+			const DiscordConstants = {
+				ChannelTypes: getModule(byProps("GUILD_TEXT"), { searchExports: true })
+			};
+			const Textbox = getModule(m => m.defaultProps && m.defaultProps.type == "text", { searchExports: true }) ?? (props => React.createElement("input", { ...props, onChange: e => props?.onChange(e.target.value) }));
+			const UnreadStateStore = getModule(m => m.isEstimated, { feature: "Unread/Mention Indicators" }) ?? new FakeUnreadStateStore();
+			const Flux = getModule(byProps("connectStores"), { name: "Flux", fatal: true });
+			const MutedStore = getModule(byProps("isMuted", "isChannelMuted"));
+			const PermissionUtils = getModule(byProps("can", "canManageUser"));
+			const UserStatusStore = DiscordModules.UserStatusStore;
+			const Spinner = getModule(m => m.Type?.SPINNING_CIRCLE, { searchExports: true, feature: "Typing Indicators" });
+			const Tooltip = BdApi.Components.Tooltip;
+			const Slider = getModule(byStrings(`"[UIKit]Slider.handleMouseDown(): assert failed: domNode nodeType !== Element"`), { searchExports: true });
+			const NavShortcuts = getModule(byProps("NAVIGATE_BACK", "NAVIGATE_FORWARD"));
+
+			const Close = getModule(byStrings("M18.4 4L12 10.4L5.6 4L4 5.6L10.4 12L4 18.4L5.6 20L12 13.6L18.4 20L20 18.4L13.6 12L20 5.6L18.4 4Z")) ?? (() => React.createElement("div", { style: { width: "16px", "text-align": "center" } }, "⨯"));
+			const PlusAlt = getModule(byStrings("15 10 10 10 10 15 8 15 8 10 3 10 3 8 8 8 8 3 10 3 10 8 15 8")) ?? (() => React.createElement("b", null, "＋"));
+			const LeftCaret = getModule(byStrings("18.35 4.35 16 2 6 12 16 22 18.35 19.65 10.717 12")) ?? (() => React.createElement("b", null, "<"));
+			const RightCaret = getModule(byStrings("8.47 2 6.12 4.35 13.753 12 6.12 19.65 8.47 22 18.47 12")) ?? (() => React.createElement("b", null, ">"));
 
 			const DefaultUserIconGrey = "https://cdn.discordapp.com/embed/avatars/0.png";
 			const DefaultUserIconGreen = "https://cdn.discordapp.com/embed/avatars/1.png";
@@ -300,7 +353,7 @@ module.exports = (() => {
 											type: "submenu",
 											label: "Close...",
 											id: "closeMenu",
-											danger: true,
+											color: "danger",
 											action: ()=>props.closeTab(props.tabIndex, "single"),
 											items: mergeLists(
 												{
@@ -308,12 +361,12 @@ module.exports = (() => {
 														{
 															label: "Close tab",
 															action: ()=>props.closeTab(props.tabIndex, "single"),
-															danger: true
+															color: "danger"
 														},
 														{
 															label: "Close all other tabs",
 															action: ()=>props.closeTab(props.tabIndex, "other"),
-															danger: true
+															color: "danger"
 														}
 													]
 												},
@@ -323,7 +376,7 @@ module.exports = (() => {
 														{
 															label: "Close all tabs to right",
 															action: ()=>props.closeTab(props.tabIndex, "right"),
-															danger: true
+															color: "danger"
 														}
 													]
 												},
@@ -333,7 +386,7 @@ module.exports = (() => {
 														{
 															label: "Close all tabs to left",
 															action: ()=>props.closeTab(props.tabIndex, "left"),
-															danger: true
+															color: "danger"
 														}
 													]
 												}
@@ -408,7 +461,7 @@ module.exports = (() => {
 														{
 															label: "Favorites Bar",
 															id: "entryNone",
-															danger: true,
+															color: "danger",
 															action: () => props.moveToFavGroup(props.favIndex, -1)
 														},
 														{
@@ -431,7 +484,7 @@ module.exports = (() => {
 										{
 											label: "Delete",
 											action: props.delete,
-											danger: true
+											color: "danger"
 										}
 									]
 								}
@@ -494,7 +547,7 @@ module.exports = (() => {
 											label: "Delete",
 											id: "deleteGroup",
 											action: ()=>props.removeFavGroup(props.favGroup.groupId),
-											danger: true
+											color: "danger"
 										}
 									]
 								}
@@ -530,7 +583,7 @@ module.exports = (() => {
 								{
 									label: "Hide Favorites",
 									action: props.hideFavBar,
-									danger: true
+									color: "danger"
 								}
 							]
 						}
@@ -703,7 +756,7 @@ module.exports = (() => {
 													label: "Show Tab Bar",
 													type: "toggle",
 													id: "showTabBar",
-													danger: true,
+													color: "danger",
 													checked: () => TopBarRef.current.state.showTabBar,
 													action: () => {
 														instance.setState({
@@ -718,7 +771,7 @@ module.exports = (() => {
 													label: "Show Fav Bar",
 													type: "toggle",
 													id: "showFavBar",
-													danger: true,
+													color: "danger",
 													checked: () => TopBarRef.current.state.showFavBar,
 													action: () => {
 														instance.setState({
@@ -733,7 +786,7 @@ module.exports = (() => {
 													label: "Show Quick Settings",
 													type: "toggle",
 													id: "showQuickSettings",
-													danger: true,
+													color: "danger",
 													checked: () => TopBarRef.current.state.showQuickSettings,
 													action: () => {
 														instance.setState({
@@ -1340,7 +1393,7 @@ module.exports = (() => {
 			}, props.mentionCount);
 
 			const TabTypingBadge = ({viewMode, isTyping, userIds})=>{
-				if (isTyping === false) return null;
+				if (isTyping === false || !Spinner) return null;
 				const text = getChannelTypingTooltipText(userIds);
 				return React.createElement(
 					"div",
@@ -1576,6 +1629,7 @@ module.exports = (() => {
 
 
 			const FavTypingBadge = ({isTyping, userIds})=>{
+				if (!Spinner) return null;
 				const text = getChannelTypingTooltipText(userIds);
 				return React.createElement(
 					Tooltip,
@@ -1997,6 +2051,7 @@ module.exports = (() => {
 						tabs: props.tabs,
 						favs: props.favs,
 						favGroups: props.favGroups,
+						reopenLastChannel: props.reopenLastChannel,
 						showTabBar: props.showTabBar,
 						showFavBar: props.showFavBar,
 						showFavUnreadBadges: props.showFavUnreadBadges,
@@ -2020,7 +2075,7 @@ module.exports = (() => {
 						showQuickSettings: props.showQuickSettings,
 						showNavButtons: props.showNavButtons,
 						alwaysFocusNewTabs: props.alwaysFocusNewTabs,
-						useStandardNav: props.useStandardNav
+						useStandardNav: props.useStandardNav,
 					};
 					this.switchToTab = this.switchToTab.bind(this);
 					this.closeTab = this.closeTab.bind(this);
@@ -3267,6 +3322,7 @@ module.exports = (() => {
 					Patcher.after(AppView.component.prototype, "render", (thisObject, _, returnValue) => {
 						returnValue.props.children = [
 							React.createElement(TopBar, {
+								reopenLastChannel: this.settings.reopenLastChannel,
 								showTabBar: this.settings.showTabBar,
 								showFavBar: this.settings.showFavBar,
 								showFavUnreadBadges: this.settings.showFavUnreadBadges,
@@ -3303,7 +3359,7 @@ module.exports = (() => {
 						].flat();
 					});
 					const forceUpdate = ()=>{
-						const { app } = WebpackModules.getByProps("app", "layers") || {};
+						const { app } = getModule(byProps("app", "layers")) || {};
 						const query = document.querySelector(`.${app}`);
 						if(query) ReactTools.getOwnerInstance(query)?.forceUpdate?.();
 					};

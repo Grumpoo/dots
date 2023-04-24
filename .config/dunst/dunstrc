@@ -4,10 +4,10 @@
     follow = none
 
     ### Geometry ###
-    width = 300
-    height = 300
-    origin = top-right
-    offset = 10x50
+    width = 350
+    height = 400
+    origin = bottom-right
+    offset = 10x10
     scale = 0
     notification_limit = 0
 
@@ -28,7 +28,7 @@
     horizontal_padding = 8
     text_icon_padding = 0
     
-    frame_width = 2
+    frame_width = 0
 
     frame_color = "#aaaaaa"
 
@@ -66,7 +66,7 @@
     icon_theme = ePapirus-Dark
     icon_position = left
 
-    min_icon_size = 48
+    min_icon_size = 64
     max_icon_size = 64
 
     # icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/

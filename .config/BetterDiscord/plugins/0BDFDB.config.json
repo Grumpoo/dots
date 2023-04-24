@@ -1,12 +1,12 @@
 {
 	"all": {
 		"changeLogs": {
-			"BDFDB": "3.0.7",
+			"BDFDB": "3.2.8",
 			"BetterNsfwTag": "1.3.2",
 			"OpenSteamLinksInApp": "1.1.5",
 			"PersonalPins": "2.1.7",
-			"PluginRepo": "2.4.5",
-			"ThemeRepo": "2.4.8"
+			"PluginRepo": "2.5.0",
+			"ThemeRepo": "2.5.0"
 		},
 		"choices": {
 			"toastPosition": "right"
@@ -18,8 +18,8 @@
 			"useChromium": false
 		},
 		"hashes": {
-			"0BDFDB.data.json": "e3ed86b6142b7a7836873a3705f16c3d3bdbf71a",
-			"0BDFDB.raw.css": "a1c4a8b6f28c4765c6af2853ddf13a35922a2b9e"
+			"0BDFDB.data.json": "bee67c4f2d42b41a9b1b2f1a7e33184e30180b06",
+			"0BDFDB.raw.css": "669b57713c736057d0465f4f6258d01a964161e8"
 		}
 	}
 }
