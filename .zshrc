@@ -3,6 +3,7 @@ HISTFILE=~/.histfile
 HISTSIZE=20000
 SAVEHIST=20000
 zstyle :compinstall filename '/home/grumpo/.zshrc'
+setopt correct
 autoload -Uz compinit
 autoload -U promptinit && promptinit
 compinit
@@ -32,8 +33,8 @@ alias polybarconf='code ~/.config/polybar'
 alias zshconf='code ~/.zshrc'
 
 # Customization.
-PS1="%B%F{green}%~%b %B%F{blue} %b%F{white}"
-RPROMPT="%F{white}%*"
+PROMPT="%B%F{green}%n@%m%b %B%F{white}%~ %b%F{blue}$ %b%F{white}"
+RPROMPT="%B%F{black}%*%b"
 
 # Custom Plugins.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
