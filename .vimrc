@@ -7,6 +7,7 @@ syntax on
 set number
 set relativenumber
 set ruler
+set termguicolors
 
 " NERDTree.
 nnoremap <leader>n :NERDTreeFocus<CR>
@@ -22,6 +23,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'chriskempson/base16-vim'
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
+Plug 'chrisbra/Colorizer'
 
 call plug#end()
 
@@ -32,8 +34,10 @@ colorscheme base16-default-dark
 " Airline.
 set noshowmode
 set laststatus=2
+let g:colorizer_auto_color = 1
 let g:airline_theme='base16_default_dark'
-let g:airline_powerline_fonts = 1
+hi Comment cterm=italic
+" let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 

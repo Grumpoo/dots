@@ -1,7 +1,7 @@
 ### WM INDEPENDENT ###
 # Terminal.
 super + Return
-	kitty
+	alacritty
 
 # Rofi (drun, run, powermenu).
 super + d ; {d,shift + d,x}
@@ -9,11 +9,11 @@ super + d ; {d,shift + d,x}
 
 # File manager.
 super + e
-	  thunar
+	  dolphin
 
 # Audio mixer.
 super + {p,shift + p}
-	  {kitty -e pulsemixer,pavucontrol}
+	  {alacritty -e pulsemixer,pavucontrol}
 
 # Clipboard.
 super + v
@@ -37,7 +37,7 @@ super + semicolon
 
 # Music player (ncmpcpp).
 super + shift + m
-	kitty -e ncmpcpp
+	alacritty -e ncmpcpp
 
 # Reload sxhkd.
 super + Escape

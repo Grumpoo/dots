@@ -20,21 +20,29 @@ export EDITOR=code
 export BROWSER=firefox
 export PATH="$HOME/.local/bin:$PATH"
 
+# Mommy. :pleading-face:
+precmd() { mommy -1 -s $? }
+
 # Aliases.
-alias ls='ls --color=auto'
+alias ls='ls --color=auto -FHh'
+alias ll='ls -l'
+alias la='ls -la'
 alias poweroff='systemctl poweroff'
 alias reboot='systemctl reboot'
-alias update='paru; sudo update-grub; sudo flatpak update'
+alias update='paru; sudo flatpak update; sudo update-grub'
+alias drivesizecheck='sudo ncdu -x /'
 
 # Configs.
-alias bspwmconf='code ~/.config/bspwm/bspwmrc'
-alias sxhkdconf='code ~/.config/sxhkd/sxhkdrc'
-alias polybarconf='code ~/.config/polybar'
-alias zshconf='code ~/.zshrc'
+alias bspwmconf='vim ~/.config/bspwm/bspwmrc'
+alias sxhkdconf='vim ~/.config/sxhkd/sxhkdrc'
+alias polybarconf='vim ~/.config/polybar'
+alias alacrittyconf='vim ~/.config/alacritty/alacritty.toml'
+alias zshconf='vim ~/.zshrc; source .zshrc'
+alias vimconf='vim ~/.vimrc'
 
 # Customization.
-PROMPT="%B%F{green}%n@%m%b %B%F{white}%~ %b%F{blue}$ %b%F{white}"
-RPROMPT="%B%F{black}%*%b"
+PROMPT="%B%F{green}%~ %B%F{blue} %F{white}"
+RPROMPT="%B%F{black}%n@%m - %*"
 
 # Custom Plugins.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

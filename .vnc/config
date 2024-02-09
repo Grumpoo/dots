@@ -1,0 +1,4 @@
+session=plasma
+geometry=1280x720
+#localhost
+alwaysshared
