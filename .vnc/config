@@ -1,4 +1,4 @@
-session=plasma
+session=bspwm
 geometry=1280x720
 #localhost
 alwaysshared
