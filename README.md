@@ -3,9 +3,9 @@
 ## What do I use?
 * Distro: Arch Linux (best distro ong)
 * Window Manager: bspwm
-* Terminal Emulator: Kitty (nyaa~)
+* Terminal Emulator: Alacritty
 * Audio Server: Pipewire (because I play osu! lol)
-* Text Editor: Visual Studio Code (me lazy to use vim rn гагагагагага)
+* Text Editor: vim
 * Login Manager:  SLiM
 * Application Launcher: rofi
 
@@ -22,7 +22,7 @@ Also, for the love of God, <b>don't use my Pipewire config</b>, unless you also 
 <summary>Before we begin, we need to install dependencies:</summary>
 
 ```bash
-paru -S bspwm sxhkd alacritty rofi polybar picom dunst nitrogen slim ttf-roboto lxappearance visual-studio-code-bin vim mpd mpc ncmpcpp dolphin gvfs qt5ct kvantum materia-gtk-theme kvantum-theme-materia papirus-icon-theme papirus-folders zsh zsh-autosuggestions zsh-syntax-highlighting pulsemixer pavucontrol lxsession network-manager-applet flameshot i3lock-color gtk-engine-murrine xarchiver ristretto xfce4-clipman-plugin emote xautolock 
+paru -S bspwm sxhkd alacritty rofi polybar picom dunst nitrogen slim ttf-roboto lxappearance visual-studio-code-bin vim mpd mpc ncmpcpp dolphin gvfs qt5ct kvantum materia-gtk-theme kvantum-theme-materia papirus-icon-theme papirus-folders zsh zsh-autosuggestions zsh-syntax-highlighting pulsemixer pavucontrol lxsession network-manager-applet flameshot i3lock-color gtk-engine-murrine xarchiver ristretto xfce4-clipman-plugin emote xautolock gnome-disk-utility
 ```
 
 Now, we get the dotfiles themselves:
