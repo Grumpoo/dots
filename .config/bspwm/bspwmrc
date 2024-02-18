@@ -4,15 +4,16 @@
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 ### AUTOSTART ###
-setxkbmap -model pc104 -layout lv,ru -variant ,phonetic_YAZHERTY -option grp:shifts_toggle &
+setxkbmap -model pc104 -layout lv,ru -variant ,phonetic_mac -option grp:shifts_toggle &
 lxsession &
 nm-applet &
 pgrep -x xfce4-clipman > /dev/null || xfce4-clipman &
 nitrogen --restore &
 flameshot &
-picom --experimental-backends &
+# picom --experimental-backends &
 dunst &
-xautolock -corners "-000" -cornersize 40 -time 5 -locker screenlock &
+# xautolock -corners "-000" -cornersize 40 -time 5 -locker screenlock &
+killall xautolock &
 mpd &
 xrdb -merge ~/.Xresources &
 xsetroot -cursor_name left_ptr &

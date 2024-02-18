@@ -10,13 +10,42 @@ bold.family = "Iosevka Nerd Font"
 italic.family = "Iosevka Nerd Font"
 bold_italic.family = "Iosevka Nerd Font"
 
+size = 12.5
+
 offset = { x = 0, y = 6 }
 glyph_offset = { x = 0, y = 3 }
-
-size = 12.5
 
 [cursor]
 style = { shape = "beam", blinking = "always" }
 
 [colors]
 draw_bold_text_with_bright_colors = true
+
+[colors.primary]
+background = '#181818'
+foreground = '#d8d8d8'
+
+[colors.cursor]
+text = '#181818'
+cursor = '#d8d8d8'
+
+[colors.normal]
+black   = '#181818'
+red     = '#ab4642'
+green   = '#a1b56c'
+yellow  = '#f7ca88'
+blue    = '#7cafc2'
+magenta = '#ba8baf'
+cyan    = '#86c1b9'
+white   = '#d8d8d8'
+
+[colors.bright]
+black   = '#585858'
+red     = '#ab4642'
+green   = '#a1b56c'
+yellow  = '#f7ca88'
+blue    = '#7cafc2'
+magenta = '#ba8baf'
+cyan    = '#86c1b9'
+white   = '#f8f8f8'
+

@@ -23,7 +23,7 @@ configuration {
 }
 
 window {
-  width: 30%;
+  width: 525px;
 }
 
 element {

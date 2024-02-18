@@ -5,7 +5,7 @@
 * Window Manager: bspwm
 * Terminal Emulator: Alacritty
 * Audio Server: Pipewire (because I play osu! lol)
-* Text Editor: vim
+* Text Editor: vim (or VSC)
 * Login Manager:  SLiM
 * Application Launcher: rofi
 * Complimenter: mommy (very important to this rice)
@@ -23,7 +23,7 @@ Also, for the love of God, <b>don't use my Pipewire config</b>, unless you also 
 <summary>Before we begin, we need to install dependencies:</summary>
 
 ```bash
-paru -S bspwm sxhkd alacritty jgmenu rofi polybar picom dunst nitrogen slim ttf-roboto lxappearance visual-studio-code-bin vim mpd mpc ncmpcpp thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman gvfs qt5ct kvantum materia-gtk-theme kvantum-theme-materia papirus-icon-theme papirus-folders zsh zsh-autosuggestions zsh-syntax-highlighting pulsemixer pavucontrol lxsession network-manager-applet flameshot i3lock-color gtk-engine-murrine xarchiver ristretto xfce4-clipman-plugin emote xautolock gnome-disk-utility shellspec-bin mommy
+paru -S bspwm sxhkd alacritty jgmenu rofi polybar picom dunst nitrogen slim ttf-roboto lxappearance visual-studio-code-bin vim mpd mpc ncmpcpp thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman gvfs qt5ct kvantum materia-gtk-theme kvantum-theme-materia papirus-icon-theme papirus-folders zsh zsh-autosuggestions zsh-syntax-highlighting pulsemixer pavucontrol lxsession network-manager-applet flameshot i3lock-color gtk-engine-murrine xarchiver ristretto xfce4-clipman-plugin xfce4-power-manager emote xautolock gnome-disk-utility shellspec-bin mommy vlc
 ```
 
 Now, we get the dotfiles themselves:
@@ -63,7 +63,7 @@ Then, open vim and type ``:PlugInstall``.
 
 Optionally, you can change the folder colours with ``papirus-folders``:
 ```bash
-papirus-folders -C yaru* -t ePapirus-Dark
+papirus-folders -C black* -t Papirus-Dark
 ```
 *Note: To find out what other colours it has, write the ``papirus-folders -l`` command.
 </details>
