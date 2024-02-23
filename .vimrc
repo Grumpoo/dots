@@ -2,6 +2,8 @@
 set encoding=UTF-8
 set nocompatible
 filetype off
+set ttymouse=sgr
+set mouse=a
 
 syntax on
 set number
@@ -18,9 +20,9 @@ nnoremap <C-f> :NERDTreeFind<CR>
 " Plugins.
 call plug#begin()
 
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'itchyny/lightline.vim'
 Plug 'chriskempson/base16-vim'
+Plug 'mike-hearn/base16-vim-lightline'
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'chrisbra/Colorizer'
@@ -30,16 +32,11 @@ call plug#end()
 " Colourscheme
 set termguicolors
 colorscheme base16-default-dark
+let base16colorspace=256
 
-" Airline.
+" Lightline.
 set noshowmode
 set laststatus=2
-let g:colorizer_auto_color = 1
-let g:airline_theme='base16_default_dark'
-hi Comment cterm=italic
-" let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#formatter = 'unique_tail'
-
-" Fix devicons for Kitty.
-set t_RV=
+let g:lightline = {
+    \ 'colorscheme': substitute(g:colors_name, '-', '_', 'g')
+    \ }

@@ -1,5 +1,0 @@
-#!/bin/sh
-
-export PIPEWIRE_LATENCY=104/48000
-
-pw-jack osu-lazer
