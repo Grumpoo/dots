@@ -55,3 +55,6 @@ RPROMPT="%B%F{black}%n@%m - %*"
 # Custom Plugins.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Fuck. (useful)
+eval $(thefuck --alias)
