@@ -1,0 +1,12 @@
+#!/bin/bash
+
+paru; sudo flatpak update; sudo bootctl update
+
+while true; do
+	read -p "Sistēma atjaunināta! Vai tu gribi restartēt savu datoru? (y/n) " yn
+    case $yn in
+        [Yy]* ) systemctl reboot; break;;
+        [Nn]* ) echo "Labi. - Žaks Fresko"; exit;;
+	* ) echo "Nezināmā atbilde. Vai tu gribi restartēt savu datoru? (y/n) ";;
+    esac
+done
