@@ -52,3 +52,5 @@ bspc rule -a zoom state=floating
 bspc rule -a minecraft-launcher state=floating
 bspc rule -a KeyOverlay state=floating
 bspc rule -a flameshot state=floating
+bspc rule -a kcalc state=floating
+bspc rule -a "veadotube mini.x86_64" state=floating
