@@ -1,7 +1,9 @@
 configuration {
   display-run: "Rakstīt:";
   display-drun: "Aplikācijas:";
+  display-window: "Logi:";
   font: "Iosevka Nerd Font 11";
+  terminal: "alacritty";
   modi: "run,drun";
 }
 

@@ -7,6 +7,10 @@ super + Return
 super + d ; {d,shift + d,x}
 	rofi -show {drun -show-icons,run,p -modi p:powermenu -lines 0}
 
+# Window list (using Rofi).
+alt + Tab
+	rofi -show window -show-icons
+
 # File manager.
 super + {e, shift + e}
 	  {thunar, alacritty -e ranger}
@@ -128,8 +132,8 @@ super + {o,i}
 	bspc wm -h on
 
 # Focus/send to workspaces.
-super + {_,shift + }{1-9,0}
-	  bspc {desktop -f,node -d} '^{1-9,10}'
+super + {_,shift + }{1-9,0,minus,equal}
+	  bspc {desktop -f,node -d} '^{1-9,10,11,12}'
 
 
 ### MINIMIZE ###
