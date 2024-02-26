@@ -3,7 +3,8 @@ HISTFILE=~/.histfile
 HISTSIZE=20000
 SAVEHIST=20000
 zstyle :compinstall filename '/home/grumpo/.zshrc'
-setopt correct
+# setopt correct
+bindkey -v
 autoload -Uz compinit
 autoload -U promptinit && promptinit
 compinit
