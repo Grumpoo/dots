@@ -5,10 +5,10 @@ padding.y = 20
 opacity = 0.99
 
 [font]
-normal.family = "Iosevka Nerd Font"
-bold.family = "Iosevka Nerd Font"
-italic.family = "Iosevka Nerd Font"
-bold_italic.family = "Iosevka Nerd Font"
+normal.family = "IosevkaTerm Nerd Font"
+bold.family = "IosevkaTerm Nerd Font"
+italic.family = "IosevkaTerm Nerd Font"
+bold_italic.family = "IosevkaTerm Nerd Font"
 
 size = 12.5
 
