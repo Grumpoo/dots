@@ -10,10 +10,10 @@ nm-applet &
 pgrep -x xfce4-clipman > /dev/null || xfce4-clipman &
 nitrogen --restore &
 flameshot &
-# picom --experimental-backends &
+picom --experimental-backends &
 dunst &
 # xautolock -corners "-000" -cornersize 40 -time 5 -locker screenlock &
-killall xautolock &
+# killall xautolock &
 mpd &
 xrdb -merge ~/.Xresources &
 xsetroot -cursor_name left_ptr &
@@ -36,7 +36,7 @@ bspc config focus_follows_pointer      true
 bspc config history_aware_focus        true
 bspc config remove_disabled_monitors   true
 bspc config merge_overlapping_monitors true
-bspc config pointer_motion_interval 1ms
+bspc config pointer_motion_interval    1ms
 
 ### COLOURING ###
 bspc config focused_border_color "#888888"
@@ -54,3 +54,4 @@ bspc rule -a KeyOverlay state=floating
 bspc rule -a flameshot state=floating
 bspc rule -a kcalc state=floating
 bspc rule -a "veadotube mini.x86_64" state=floating
+bspc rule -a Anydesk state=floating

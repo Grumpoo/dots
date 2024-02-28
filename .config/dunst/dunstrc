@@ -14,7 +14,7 @@
     ### Progress bar ###
     progress_bar = true
     progress_bar_height = 20
-    progress_bar_frame_width = 0
+    progress_bar_frame_width = 20
     progress_bar_min_width = 150
     progress_bar_max_width = 300
 

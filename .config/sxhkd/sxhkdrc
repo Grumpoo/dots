@@ -11,6 +11,9 @@ super + d ; {d,shift + d,x}
 alt + Tab
 	rofi -show window -show-icons
 
+super + b
+	microsoft-edge-stable
+
 # File manager.
 super + {e, shift + e}
 	  {thunar, alacritty -e ranger}
@@ -40,8 +43,8 @@ super + semicolon
 	emote
 
 # Task Manager.
-ctrl + shift + Escape
-	alacritty -e bashtop
+ctrl + shift + {Escape, alt + Escape}
+	{alacritty -e bashtop, alacritty -e nvtop}
 
 # Music player (ncmpcpp).
 super + shift + m
