@@ -63,7 +63,7 @@ XF86Audio{LowerVolume,RaiseVolume}
 
 # Mute audio.
 XF86AudioMute
-  pactl set-sink-mute @DEFAULT_SINK@ toggle
+	pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 ## Music player.
 # Increase/decrease volume.
@@ -76,7 +76,7 @@ XF86Audio{Next,Prev}
 
 # Pause the song.
 XF86AudioPlay
-  mpc toggle
+	mpc toggle
 
 
 ### BSPWM ###
@@ -108,6 +108,9 @@ super + g
 super + {comma,period}
 	bspc monitor -f {west,east}
 
+# Move window to next/prev monitor
+super + shift + {comma,period}
+	bspc node -m {next,prev}
 
 ### STATE/FLAGS ###
 # Set the layout/state.
@@ -115,7 +118,7 @@ super + {t,shift + f,f}
 	bspc node -t {tiled,floating,fullscreen}
 
 # set the node flags
-super + ctrl + {m,x,y,z}
+ctrl + super + {m,x,y,z}
 	bspc node -g {marked,locked,sticky,private}
 
 
@@ -142,17 +145,24 @@ super + {_,shift + }{1-9,0,minus,equal}
 ### MINIMIZE ###
 # Hide window.
 super + n
-  bspc node -g hidden
+	bspc node -g hidden
 
 # Unhide window.
 super + shift + n
-  bspc node {,$(bspc query -N -n .hidden | tail -n1)} -g hidden=off
+	bspc node {,$(bspc query -N -n .hidden | tail -n1)} -g hidden=off
 
 
 ### MOVE/RESIZE ###
 # Resize window (looks like shit I know).
-super + ctrl + {h,shift + h,j,shift + j,k,shift + k,l,shift + l}
-	bspc node -z {left -50 0,right -50 0,bottom 0 50,top 0 50,top 0 -50,bottom 0 -50,right 50 0,left 50 0}
+super + ctrl + {h,j,k,l}
+    {bspc node @parent/second -z left -50 0; \
+    bspc node @parent/first -z right -50 0, \
+    bspc node @parent/second -z top 0 +50; \
+    bspc node @parent/first -z bottom 0 +50, \
+    bspc node @parent/first -z bottom 0 -50; \
+    bspc node @parent/second -z top 0 -50, \
+    bspc node @parent/first -z right +50 0; \
+    bspc node @parent/second -z left +50 0}
 
 # Focus/move the window.
 super + {_,shift + }{h,j,k,l}

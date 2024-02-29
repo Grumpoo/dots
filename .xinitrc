@@ -13,6 +13,7 @@ xsetroot -cursor_name left_ptr
 
 # Autostart.
 otd-daemon &
+nvidia-xconfig &
 
 # Fix slow app opening.
 dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY

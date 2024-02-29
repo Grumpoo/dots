@@ -11,6 +11,10 @@ set relativenumber
 set ruler
 set termguicolors
 
+set clipboard+=unnamed
+set paste
+set go+=a 
+
 " NERDTree.
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
@@ -26,6 +30,7 @@ Plug 'mike-hearn/base16-vim-lightline'
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'chrisbra/Colorizer'
+Plug 'tribela/vim-transparent'
 
 call plug#end()
 
