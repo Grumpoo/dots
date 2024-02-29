@@ -45,7 +45,7 @@ After you've done that, make some files executable:
 chmod +x ~/.config/bspwm/bspwmrc; chmod +x .xinitrc; chmod +x ~/.config/polybar/launch.sh; chmod +x ~/.local/bin/*
 ```
 And last, but not least, <b>restart your system.</b>
-If you see the <b>Killer fish from San Diego</b> pfp in the middle, then CONGRATULATIONS, YOU HAVE SUCCESSFULLY GOT MY RICE TO WORK ON YOUR PC! :D  
+If you see the <b>purple ball/b> pfp in the middle, then CONGRATULATIONS, YOU HAVE SUCCESSFULLY GOT MY RICE TO WORK ON YOUR PC! :D  
 
 The only thing left to now is to delete the ``dotfiles`` folder:
 ```bash
