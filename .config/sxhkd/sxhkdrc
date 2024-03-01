@@ -72,7 +72,7 @@ alt + {Up, Down}
 	mpc volume {+5, -5}
 
 # Next/prev song.
-XF86Audio{Next, Prev}
+XF86Audio{Next,Prev}
 	mpc {next, prev}
 
 # Pause the song.
