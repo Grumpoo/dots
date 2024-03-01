@@ -10,7 +10,7 @@ nm-applet &
 pgrep -x xfce4-clipman > /dev/null || xfce4-clipman &
 nitrogen --restore &
 flameshot &
-picom --experimental-backends &
+picom &
 dunst &
 # xautolock -corners "-000" -cornersize 40 -time 5 -locker screenlock &
 # killall xautolock &

@@ -4,13 +4,14 @@ super + Return
 	alacritty
 
 # Rofi (drun, run, powermenu).
-super + d ; {d,shift + d,x}
+super + d ; {d, shift + d, x}
 	rofi -show {drun -show-icons,run,p -modi p:powermenu -lines 0}
 
 # Window list (using Rofi).
 alt + Tab
 	rofi -show window -show-icons
 
+# Browser.
 super + b
 	microsoft-edge-stable
 
@@ -19,7 +20,7 @@ super + {e, shift + e}
 	  {thunar, alacritty -e ranger}
 
 # Audio mixer.
-super + {p,shift + p}
+super + {p, shift + p}
 	  {alacritty -e pulsemixer,pavucontrol}
 
 # Clipboard.
@@ -58,7 +59,7 @@ super + Escape
 ### AUDIO ###
 ## Main audio.
 # Increase/decrease volume.
-XF86Audio{LowerVolume,RaiseVolume}
+XF86Audio{LowerVolume, RaiseVolume}
 	pactl set-sink-volume @DEFAULT_SINK@ {-5%,+5%}
 
 # Mute audio.
@@ -67,12 +68,12 @@ XF86AudioMute
 
 ## Music player.
 # Increase/decrease volume.
-alt + {Up,Down}
-	mpc volume {+5,-5}
+alt + {Up, Down}
+	mpc volume {+5, -5}
 
 # Next/prev song.
-XF86Audio{Next,Prev}
-	mpc {next,prev}
+XF86Audio{Next, Prev}
+	mpc {next, prev}
 
 # Pause the song.
 XF86AudioPlay
@@ -96,75 +97,51 @@ super + shift + c
 super + m
 	bspc desktop -l next
 
-# Send the newest marked node to the newest preselected node.
-super + y
-	bspc node newest.marked.local -n newest.!automatic.local
-
-# Swap the current node and the biggest window.
-super + g
-	bspc node -s biggest.window
-
 # Focus next/prev monitor.
-super + {comma,period}
+super + {comma, period}
 	bspc monitor -f {west,east}
 
 # Move window to next/prev monitor
-super + shift + {comma,period}
+super + shift + {comma, period}
 	bspc node -m {next,prev}
 
 ### STATE/FLAGS ###
 # Set the layout/state.
-super + {t,shift + f,f}
+super + {t, shift + f, f}
 	bspc node -t {tiled,floating,fullscreen}
 
-# set the node flags
-ctrl + super + {m,x,y,z}
-	bspc node -g {marked,locked,sticky,private}
-
-
 ### FOCUS/SWAP ###
-# Focus the next/previous desktop in the current monitor.
-super + bracket{left,right}
-	bspc desktop -f {prev,next}.local
-
-# Focus the last node/desktop.
-super + {grave,Tab}
-	bspc {node,desktop} -f last
-
-# Focus the older or newer node in the focus history.
-super + {o,i}
-	bspc wm -h off; \
-	bspc node {older,newer} -f; \
-	bspc wm -h on
-
 # Focus/send to workspaces.
-super + {_,shift + }{1-9,0,minus,equal}
+super + {_,shift + }{1-9, 0, minus, equal}
 	  bspc {desktop -f,node -d} '^{1-9,10,11,12}'
 
 
 ### MINIMIZE ###
-# Hide window.
+# Minimize window.
 super + n
 	bspc node -g hidden
 
-# Unhide window.
+# Unminimize window.
 super + shift + n
-	bspc node {,$(bspc query -N -n .hidden | tail -n1)} -g hidden=off
+	bspc node {, $(bspc query -N -n .hidden | tail -n1)} -g hidden=off
 
 
-### MOVE/RESIZE ###
+### WINDOW MOVEMENT ###
 # Resize window (looks like shit I know).
-super + ctrl + {h,j,k,l}
-    {bspc node @parent/second -z left -50 0; \
-    bspc node @parent/first -z right -50 0, \
-    bspc node @parent/second -z top 0 +50; \
-    bspc node @parent/first -z bottom 0 +50, \
-    bspc node @parent/first -z bottom 0 -50; \
-    bspc node @parent/second -z top 0 -50, \
-    bspc node @parent/first -z right +50 0; \
-    bspc node @parent/second -z left +50 0}
+super + ctrl + {h, j, k, l}
+	{bspc node @parent/second -z left -50 0; \
+	bspc node @parent/first -z right -50 0, \
+	bspc node @parent/second -z top 0 +50; \
+	bspc node @parent/first -z bottom 0 +50, \
+	bspc node @parent/first -z bottom 0 -50; \
+	bspc node @parent/second -z top 0 -50, \
+	bspc node @parent/first -z right +50 0; \
+	bspc node @parent/second -z left +50 0}
 
 # Focus/move the window.
-super + {_,shift + }{h,j,k,l}
+super + {_, shift + }{h, j, k, l}
 	bspc node -{f,s} {west,south,north,east}
 
+# Rotate nodes.
+ctrl + super + r
+	bspc node @focused:/ -R 90
