@@ -59,7 +59,7 @@ super + Escape
 ### AUDIO ###
 ## Main audio.
 # Increase/decrease volume.
-XF86Audio{LowerVolume, RaiseVolume}
+XF86Audio{LowerVolume,RaiseVolume}
 	pactl set-sink-volume @DEFAULT_SINK@ {-5%, +5%}
 
 # Mute audio.

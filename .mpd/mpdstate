@@ -1,8 +1,8 @@
-sw_volume: 49
+sw_volume: 63
 audio_device_state:1:pulse audio
 audio_device_state:1:my_fifo
 state: stop
-current: 134
+current: 342
 random: 1
 repeat: 0
 single: 0
@@ -698,4 +698,5 @@ playlist_begin
 684:SUSUMU HIRASAWA MEGA ARCHIVE/SUSUMU HIRASAWA/SUSUMU HIRASAWA (平沢進)/[2017] The 6th Formant/04 Take the Wheel.mp3
 685:SUSUMU HIRASAWA MEGA ARCHIVE/SUSUMU HIRASAWA/SUSUMU HIRASAWA (平沢進)/[2017] The 6th Formant/05 Electric Light Bathing - Reboot.mp3
 686:SUSUMU HIRASAWA MEGA ARCHIVE/SUSUMU HIRASAWA/SUSUMU HIRASAWA (平沢進)/[2017] The 6th Formant/06 The Bellows Man.mp3
+687:Susumu Hirasawa/Singles/[2023.05.06] The Expedition/01. The Expedition.mp3
 playlist_end
