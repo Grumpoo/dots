@@ -26,10 +26,10 @@ export PATH="$HOME/.local/bin:$PATH"
 precmd() { mommy -1 -s $? }
 
 # Aliases.
-alias ls='ls --color=auto -FHh'
-alias ll='ls -l'
-alias la='ls -la'
-alias lsa='ls -a'
+alias ls='exa'
+alias ll='exa -l'
+alias la='exa -la'
+alias lsa='exa -a'
 alias rm='rm -rfv'
 alias ..='cd ..'
 alias ...='cd ...'

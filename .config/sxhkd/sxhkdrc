@@ -51,6 +51,10 @@ ctrl + shift + {Escape, alt + Escape}
 super + shift + m
 	alacritty -e ncmpcpp
 
+# Reload keyboard layout.
+super + shift + Escape
+	setxkbmap -model pc104 -layout lv,ru -variant ,phonetic_mac -option grp:shifts_toggle	
+
 # Reload sxhkd.
 super + Escape
 	pkill -USR1 -x sxhkd
