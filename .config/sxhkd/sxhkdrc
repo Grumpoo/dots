@@ -49,7 +49,7 @@ ctrl + shift + {Escape, alt + Escape}
 
 # Music player (ncmpcpp).
 super + shift + m
-	alacritty -e ncmpcpp
+	mpc update; alacritty -e ncmpcpp
 
 # Reload keyboard layout.
 super + shift + Escape

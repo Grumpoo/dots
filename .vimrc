@@ -31,6 +31,7 @@ Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'chrisbra/Colorizer'
 Plug 'tribela/vim-transparent'
+Plug 'vimsence/vimsence'
 
 call plug#end()
 

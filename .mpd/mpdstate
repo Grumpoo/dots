@@ -1,8 +1,8 @@
-sw_volume: 63
+sw_volume: 64
 audio_device_state:1:pulse audio
 audio_device_state:1:my_fifo
 state: stop
-current: 342
+current: 695
 random: 1
 repeat: 0
 single: 0
@@ -691,12 +691,41 @@ playlist_begin
 677:SUSUMU HIRASAWA MEGA ARCHIVE/SUSUMU HIRASAWA/LIVE RECORDINGS/[2014] Method of LIVE 2 The magic of Introduction (LIVEの方法2『導入のマジック』)/01 Adore Me, I am TV (Parallel Kozak ver.).flac
 678:SUSUMU HIRASAWA MEGA ARCHIVE/SUSUMU HIRASAWA/LIVE RECORDINGS/[2014] Method of LIVE 2 The magic of Introduction (LIVEの方法2『導入のマジック』)/03 Big Brother (Parallel Kozak ver. xVirtual Live).flac
 679:SUSUMU HIRASAWA MEGA ARCHIVE/SUSUMU HIRASAWA/LIVE RECORDINGS/[2014] Method of LIVE 2 The magic of Introduction (LIVEの方法2『導入のマジック』)/06 Dual Perspective 3.4 (Tokyo Vistoron ver.).flac
-680:Susumu Hirasawa Discography/Susumu Hirasawa/2003 - Songs Against the Carnage - Web Release/02 lovesong.mp3
-681:SUSUMU HIRASAWA MEGA ARCHIVE/SUSUMU HIRASAWA/SUSUMU HIRASAWA (平沢進)/[2017] The 6th Formant/01 Haldyn Hotel.mp3
-682:SUSUMU HIRASAWA MEGA ARCHIVE/SUSUMU HIRASAWA/SUSUMU HIRASAWA (平沢進)/[2017] The 6th Formant/02 Coyote.mp3
-683:SUSUMU HIRASAWA MEGA ARCHIVE/SUSUMU HIRASAWA/SUSUMU HIRASAWA (平沢進)/[2017] The 6th Formant/03 inmortal man.mp3
-684:SUSUMU HIRASAWA MEGA ARCHIVE/SUSUMU HIRASAWA/SUSUMU HIRASAWA (平沢進)/[2017] The 6th Formant/04 Take the Wheel.mp3
-685:SUSUMU HIRASAWA MEGA ARCHIVE/SUSUMU HIRASAWA/SUSUMU HIRASAWA (平沢進)/[2017] The 6th Formant/05 Electric Light Bathing - Reboot.mp3
-686:SUSUMU HIRASAWA MEGA ARCHIVE/SUSUMU HIRASAWA/SUSUMU HIRASAWA (平沢進)/[2017] The 6th Formant/06 The Bellows Man.mp3
-687:Susumu Hirasawa/Singles/[2023.05.06] The Expedition/01. The Expedition.mp3
+680:SUSUMU HIRASAWA MEGA ARCHIVE/SUSUMU HIRASAWA/SUSUMU HIRASAWA (平沢進)/[2017] The 6th Formant/01 Haldyn Hotel.mp3
+681:SUSUMU HIRASAWA MEGA ARCHIVE/SUSUMU HIRASAWA/SUSUMU HIRASAWA (平沢進)/[2017] The 6th Formant/02 Coyote.mp3
+682:SUSUMU HIRASAWA MEGA ARCHIVE/SUSUMU HIRASAWA/SUSUMU HIRASAWA (平沢進)/[2017] The 6th Formant/03 inmortal man.mp3
+683:SUSUMU HIRASAWA MEGA ARCHIVE/SUSUMU HIRASAWA/SUSUMU HIRASAWA (平沢進)/[2017] The 6th Formant/04 Take the Wheel.mp3
+684:SUSUMU HIRASAWA MEGA ARCHIVE/SUSUMU HIRASAWA/SUSUMU HIRASAWA (平沢進)/[2017] The 6th Formant/05 Electric Light Bathing - Reboot.mp3
+685:SUSUMU HIRASAWA MEGA ARCHIVE/SUSUMU HIRASAWA/SUSUMU HIRASAWA (平沢進)/[2017] The 6th Formant/06 The Bellows Man.mp3
+686:Susumu Hirasawa/Singles/[2023.05.06] The Expedition/01. The Expedition.mp3
+687:核P-MODEL/2004 - Vistoron/01 二重展望3.mp3
+688:核P-MODEL/2004 - Vistoron/02 Big Brother.mp3
+689:核P-MODEL/2004 - Vistoron/03 アンチ・ビストロン.mp3
+690:核P-MODEL/2004 - Vistoron/04 崇めよ我はTVなり.mp3
+691:核P-MODEL/2004 - Vistoron/05 巡航プシクラオン.mp3
+692:核P-MODEL/2004 - Vistoron/06 暗黒πドゥアイ.mp3
+693:核P-MODEL/2004 - Vistoron/07 パラ・ユニフス.mp3
+694:核P-MODEL/2004 - Vistoron/08 Space Hook.mp3
+695:核P-MODEL/2004 - Vistoron/09 ビストロン.mp3
+696:核P-MODEL/2004 - Vistoron/10 アンチモネシア.mp3
+697:核P-MODEL/2013 - Гипноза/01 гипноза (Gipnoza).mp3
+698:核P-MODEL/2013 - Гипноза/02 それ行け！Halycon.mp3
+699:核P-MODEL/2013 - Гипноза/03 排時光.mp3
+700:核P-MODEL/2013 - Гипноза/04 白く巨大で.mp3
+701:核P-MODEL/2013 - Гипноза/05 Dμ34＝不死.mp3
+702:核P-MODEL/2013 - Гипноза/06 Dr.древние (Dr.Drevniye).mp3
+703:核P-MODEL/2013 - Гипноза/07 Parallel Kozak.mp3
+704:核P-MODEL/2013 - Гипноза/08 Alarm.mp3
+705:核P-MODEL/2013 - Гипноза/09 109号区の氾濫.mp3
+706:核P-MODEL/2013 - Гипноза/10 Timelineの東.mp3
+707:核P-MODEL/2018 - 回=回 (Kai=Kai)/01 回=回.mp3
+708:核P-MODEL/2018 - 回=回 (Kai=Kai)/02 遮眼大師.mp3
+709:核P-MODEL/2018 - 回=回 (Kai=Kai)/03 OPUS.mp3
+710:核P-MODEL/2018 - 回=回 (Kai=Kai)/04 TRAVELATOR.mp3
+711:核P-MODEL/2018 - 回=回 (Kai=Kai)/05 亜呼吸ユリア.mp3
+712:核P-MODEL/2018 - 回=回 (Kai=Kai)/06 無頭騎士の伝言.mp3
+713:核P-MODEL/2018 - 回=回 (Kai=Kai)/07 ECHO-233.mp3
+714:核P-MODEL/2018 - 回=回 (Kai=Kai)/08 幽霊飛行機.mp3
+715:核P-MODEL/2018 - 回=回 (Kai=Kai)/09 PLANET-HOME.mp3
+716:核P-MODEL/2018 - 回=回 (Kai=Kai)/10 HUMAN-LE.mp3
 playlist_end

@@ -17,7 +17,7 @@ bindkey "^[[1;5D" beginning-of-line
 bindkey "^[[1;5C" end-of-line
 
 # Environment variables.
-export TERMINAL=alacritty
+export TERM=alacritty
 export EDITOR=code
 export BROWSER=firefox
 export PATH="$HOME/.local/bin:$PATH"
@@ -30,10 +30,11 @@ alias ls='exa'
 alias ll='exa -l'
 alias la='exa -la'
 alias lsa='exa -a'
+alias mkdir='mkdir -p'
 alias rm='rm -rfv'
+alias cp='cp -rv'
 alias ..='cd ..'
 alias ...='cd ...'
-alias bļenepareiziuzrakstījukomandu='fuck'
 alias poweroff='systemctl poweroff'
 alias reboot='systemctl reboot'
 alias drivesizecheck='sudo ncdu -x /'
