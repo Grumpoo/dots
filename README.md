@@ -48,7 +48,9 @@ sudo cp -r etc/ usr/ /
 ```
 After you've done that, make some files executable:
 ```bash
-chmod +x ~/.config/bspwm/bspwmrc; chmod +x .xinitrc; chmod +x ~/.config/polybar/launch.sh; chmod +x ~/.local/bin/*
+chmod +x ~/.config/bspwm/bspwmrc; \
+chmod +x .xinitrc; chmod +x ~/.config/polybar/launch.sh; \
+chmod +x ~/.local/bin/*
 ```
 And last, but not least, <b>restart your system.</b>
 If you see the <b>purple ball</b> pfp in the middle, then CONGRATULATIONS, YOU HAVE SUCCESSFULLY GOT MY RICE TO WORK ON YOUR PC! :D  
