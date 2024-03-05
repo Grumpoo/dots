@@ -26,7 +26,8 @@ visual-studio-code-bin vim mpd mpc ncmpcpp thunar thunar-archive-plugin thunar-m
 thunar-volman gvfs qt5ct kvantum materia-gtk-theme kvantum-theme-materia papirus-icon-theme \
 papirus-folders zsh zsh-autosuggestions zsh-syntax-highlighting pulsemixer pavucontrol lxsession \
 network-manager-applet flameshot i3lock-color gtk-engine-murrine xarchiver ristretto \
-xfce4-clipman-plugin xfce4-power-manager emote xautolock gnome-disk-utility shellspec-bin mommy vlc fuck exa
+xfce4-clipman-plugin xfce4-power-manager emote xautolock gnome-disk-utility shellspec-bin mommy \
+vlc fuck exa
 ```
 
 Now, we get the dotfiles themselves:
