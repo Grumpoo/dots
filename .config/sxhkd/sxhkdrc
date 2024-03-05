@@ -4,7 +4,7 @@ super + Return
 	alacritty
 
 # Rofi (drun, run, powermenu).
-super + d ; {d, shift + d, x}
+super + d ; {d,shift + d,x}
 	rofi -show {drun -show-icons, run, p -modi p:powermenu -lines 0}
 
 # Window list (using Rofi).
@@ -16,11 +16,11 @@ super + b
 	microsoft-edge-stable
 
 # File manager.
-super + {e, shift + e}
+super + {e,shift + e}
 	  {thunar, alacritty -e ranger}
 
 # Audio mixer.
-super + {p, shift + p}
+super + {p,shift + p}
 	  {alacritty -e pulsemixer, pavucontrol}
 
 # Clipboard.
@@ -35,6 +35,10 @@ ctrl + Print
 super + shift + v
 	code
 
+# OBS.
+super + o
+	flatpak run com.obsproject.Studio
+
 # Lock the screen.
 ctrl + alt + shift + l
 	 screenlock
@@ -44,7 +48,7 @@ super + semicolon
 	emote
 
 # Task Manager.
-ctrl + shift + {Escape, alt + Escape}
+ctrl + shift + {Escape,alt + Escape}
 	{alacritty -e bashtop, alacritty -e nvtop}
 
 # Music player (ncmpcpp).
@@ -72,8 +76,8 @@ XF86AudioMute
 
 ## Music player.
 # Increase/decrease volume.
-alt + {Up, Down}
-	mpc volume {+5, -5}
+alt + {Up,Down}
+	mpc volume {+5,-5}
 
 # Next/prev song.
 XF86Audio{Next,Prev}
@@ -102,22 +106,22 @@ super + m
 	bspc desktop -l next
 
 # Focus next/prev monitor.
-super + {comma, period}
+super + {comma,period}
 	bspc monitor -f {west, east}
 
 # Move window to next/prev monitor
-super + shift + {comma, period}
+super + shift + {comma,period}
 	bspc node -m {next, prev}
 
 ### STATE/FLAGS ###
 # Set the layout/state.
-super + {t, shift + f, f}
+super + {t,shift + f,f}
 	bspc node -t {tiled, floating, fullscreen}
 
 ### FOCUS/SWAP ###
 # Focus/send to workspaces.
-super + {_,shift + }{1-9, 0, minus, equal}
-	  bspc {desktop -f, node -d} '^{1-9, 10, 11, 12}'
+super + {_,shift + }{1-9,0,minus,equal}
+	  bspc {desktop -f, node -d} '^{1-9,10,11,12}'
 
 
 ### MINIMIZE ###
@@ -127,12 +131,12 @@ super + n
 
 # Unminimize window.
 super + shift + n
-	bspc node {, $(bspc query -N -n .hidden | tail -n1)} -g hidden=off
+	bspc node {,$(bspc query -N -n .hidden | tail -n1)} -g hidden=off
 
 
 ### WINDOW MOVEMENT ###
 # Resize window (looks like shit I know).
-super + ctrl + {h, j, k, l}
+super + ctrl + {h,j,k,l}
 	{bspc node @parent/second -z left -50 0; \
 	bspc node @parent/first -z right -50 0, \
 	bspc node @parent/second -z top 0 +50; \
@@ -143,7 +147,7 @@ super + ctrl + {h, j, k, l}
 	bspc node @parent/second -z left +50 0}
 
 # Focus/move the window.
-super + {_, shift + }{h, j, k, l}
+super + {_,shift + }{h,j,k,l}
 	bspc node -{f, s} {west, south, north, east}
 
 # Rotate nodes.
