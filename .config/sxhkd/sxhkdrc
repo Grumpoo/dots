@@ -27,9 +27,13 @@ super + {p,shift + p}
 super + v
 	  xfce4-popup-clipman
 
-# Screenshot.
-ctrl + Print
-	 flameshot gui
+# Screenshot (region).
+super + shift + s
+	flameshot gui
+
+# Screenshot (full).
+Print
+	flameshot full
 
 # Text editor.
 super + shift + v
@@ -153,3 +157,4 @@ super + {_,shift + }{h,j,k,l}
 # Rotate nodes.
 ctrl + super + r
 	bspc node @focused:/ -R 90
+
