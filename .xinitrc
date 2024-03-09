@@ -2,7 +2,7 @@
 
 # Enviroment Variables.
 export PATH="$HOME/.local/bin:$PATH"
-export QT_QPA_PLATFORMTHEME=qt5ct
+export QT_QPA_PLATFORMTHEME=gtk2
 export CLUTTER_DEFAULT_FPS=144
 export __GL_SYNC_DISPLAY_DEVICE=DP-0
 export __GL_SYNC_TO_VBLANK=0
