@@ -2,5 +2,4 @@
 theme=MateriaDark#
 
 [Applications]
-Default=obs-studio
 MateriaDark%23=obs-studio

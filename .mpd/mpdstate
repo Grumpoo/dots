@@ -1,9 +1,8 @@
-sw_volume: 40
+sw_volume: 100
 audio_device_state:1:pulse audio
 audio_device_state:1:my_fifo
-state: play
-current: 108
-time: 97.771000
+state: stop
+current: 106
 random: 1
 repeat: 0
 single: 0
@@ -1007,4 +1006,97 @@ playlist_begin
 992:КИНО/2002 - Последние записи/17 - Печаль.flac
 993:КИНО/2002 - Последние записи/18 - Апрель.flac
 994:КИНО/2002 - Последние записи/19 - Смотри - это кино....flac
+995:Beach House/Studio Albums/2006 - Beach House/01 Saltwater.mp3
+996:Beach House/Studio Albums/2006 - Beach House/02 Tokyo Witch.mp3
+997:Beach House/Studio Albums/2006 - Beach House/03 Apple Orchard.mp3
+998:Beach House/Studio Albums/2006 - Beach House/04 Master of None.mp3
+999:Beach House/Studio Albums/2006 - Beach House/05 Auburn and Ivory.mp3
+1000:Beach House/Studio Albums/2006 - Beach House/06 Childhood.mp3
+1001:Beach House/Studio Albums/2006 - Beach House/07 Lovelier Girl.mp3
+1002:Beach House/Studio Albums/2006 - Beach House/08 House on the Hill.mp3
+1003:Beach House/Studio Albums/2006 - Beach House/09 Heart and Lungs.mp3
+1004:Beach House/Studio Albums/2008 - Devotion/01 Wedding Bell.mp3
+1005:Beach House/Studio Albums/2008 - Devotion/02 You Came to Me.mp3
+1006:Beach House/Studio Albums/2008 - Devotion/03 Gila.mp3
+1007:Beach House/Studio Albums/2008 - Devotion/04 Turtle Island.mp3
+1008:Beach House/Studio Albums/2008 - Devotion/05 Holy Dances.mp3
+1009:Beach House/Studio Albums/2008 - Devotion/06 All the Years.mp3
+1010:Beach House/Studio Albums/2008 - Devotion/07 Heart of Chambers.mp3
+1011:Beach House/Studio Albums/2008 - Devotion/08 Some Things Last a Long Time.mp3
+1012:Beach House/Studio Albums/2008 - Devotion/09 Astronaut.mp3
+1013:Beach House/Studio Albums/2008 - Devotion/10 d.a.r.l.i.n.g.mp3
+1014:Beach House/Studio Albums/2008 - Devotion/11 Home Again.mp3
+1015:Beach House/Singles, EPs/2008 - Used To Be (Single)/01 Used To Be.mp3
+1016:Beach House/Singles, EPs/2008 - Used To Be (Single)/02 Apple Orchard (Virgin 4 Track Recording).mp3
+1017:Beach House/Singles, EPs/2009 - Norway (Single)/01 Norway.mp3
+1018:Beach House/Studio Albums/2010 - Teen Dream/01 Zebra.mp3
+1019:Beach House/Studio Albums/2010 - Teen Dream/02 Silver Soul.mp3
+1020:Beach House/Studio Albums/2010 - Teen Dream/03 Norway.mp3
+1021:Beach House/Studio Albums/2010 - Teen Dream/04 Walk in the Park.mp3
+1022:Beach House/Studio Albums/2010 - Teen Dream/05 Used to Be.mp3
+1023:Beach House/Studio Albums/2010 - Teen Dream/06 Lover of Mine.mp3
+1024:Beach House/Studio Albums/2010 - Teen Dream/07 Better Times.mp3
+1025:Beach House/Studio Albums/2010 - Teen Dream/08 10 Mile Stereo.mp3
+1026:Beach House/Studio Albums/2010 - Teen Dream/09 Real Love.mp3
+1027:Beach House/Studio Albums/2010 - Teen Dream/10 Take Care.mp3
+1028:Beach House/Singles, EPs/2010 - Zebra (EP)/01 Zebra (UK Radio Edit).mp3
+1029:Beach House/Singles, EPs/2010 - Zebra (EP)/02 The Arrangement.mp3
+1030:Beach House/Singles, EPs/2010 - Zebra (EP)/03 Baby.mp3
+1031:Beach House/Singles, EPs/2010 - Zebra (EP)/04 10 Mile Stereo (Cough Syrup Remix).mp3
+1032:Beach House/Studio Albums/2012 - Bloom/01 Myth.mp3
+1033:Beach House/Studio Albums/2012 - Bloom/02 Wild.mp3
+1034:Beach House/Studio Albums/2012 - Bloom/03 Lazuli.mp3
+1035:Beach House/Studio Albums/2012 - Bloom/04 Other People.mp3
+1036:Beach House/Studio Albums/2012 - Bloom/05 The Hours.mp3
+1037:Beach House/Studio Albums/2012 - Bloom/06 Troublemaker.mp3
+1038:Beach House/Studio Albums/2012 - Bloom/07 New Year.mp3
+1039:Beach House/Studio Albums/2012 - Bloom/08 Wishes.mp3
+1040:Beach House/Studio Albums/2012 - Bloom/09 On the Sea.mp3
+1041:Beach House/Studio Albums/2012 - Bloom/10 Irene.mp3
+1042:Beach House/Singles, EPs/2012 - Lazuli (Single)/01 Lazuli.mp3
+1043:Beach House/Singles, EPs/2012 - Lazuli (Single)/02 Equal Mind.mp3
+1044:Beach House/Singles, EPs/2012 - Myth (Single)/01 Myth.mp3
+1045:Beach House/Studio Albums/2015 - Depression Cherry/01 Levitation.mp3
+1046:Beach House/Studio Albums/2015 - Depression Cherry/02 Sparks.mp3
+1047:Beach House/Studio Albums/2015 - Depression Cherry/03 Space Song.mp3
+1048:Beach House/Studio Albums/2015 - Depression Cherry/04 Beyond Love.mp3
+1049:Beach House/Studio Albums/2015 - Depression Cherry/05 10_37.mp3
+1050:Beach House/Studio Albums/2015 - Depression Cherry/06 PPP.mp3
+1051:Beach House/Studio Albums/2015 - Depression Cherry/07 Wildflower.mp3
+1052:Beach House/Studio Albums/2015 - Depression Cherry/08 Bluebird.mp3
+1053:Beach House/Studio Albums/2015 - Depression Cherry/09 Days of Candy.mp3
+1054:Beach House/Studio Albums/2015 - Thank Your Lucky Stars/01 Majorette.mp3
+1055:Beach House/Studio Albums/2015 - Thank Your Lucky Stars/02 She's So Lovely.mp3
+1056:Beach House/Studio Albums/2015 - Thank Your Lucky Stars/03 All Your Yeahs.mp3
+1057:Beach House/Studio Albums/2015 - Thank Your Lucky Stars/04 One Thing.mp3
+1058:Beach House/Studio Albums/2015 - Thank Your Lucky Stars/05 Common Girl.mp3
+1059:Beach House/Studio Albums/2015 - Thank Your Lucky Stars/06 The Traveller.mp3
+1060:Beach House/Studio Albums/2015 - Thank Your Lucky Stars/07 Elegy To The Void.mp3
+1061:Beach House/Studio Albums/2015 - Thank Your Lucky Stars/08 Rough Song.mp3
+1062:Beach House/Studio Albums/2015 - Thank Your Lucky Stars/09 Somewhere Tonight.mp3
+1063:Beach House/Studio Albums/2017 - B-Sides And Rarities/01 Chariot.mp3
+1064:Beach House/Studio Albums/2017 - B-Sides And Rarities/02 Baby.mp3
+1065:Beach House/Studio Albums/2017 - B-Sides And Rarities/03 Equal Mind.mp3
+1066:Beach House/Studio Albums/2017 - B-Sides And Rarities/04 Used To Be (2008 Single Version).mp3
+1067:Beach House/Studio Albums/2017 - B-Sides And Rarities/05 White Moon (iTunes Session Remix).mp3
+1068:Beach House/Studio Albums/2017 - B-Sides And Rarities/06 Baseball Diamond.mp3
+1069:Beach House/Studio Albums/2017 - B-Sides And Rarities/07 Norway (iTunes Session Remix).mp3
+1070:Beach House/Studio Albums/2017 - B-Sides And Rarities/08 Play the Game.mp3
+1071:Beach House/Studio Albums/2017 - B-Sides And Rarities/09 The Arrangement.mp3
+1072:Beach House/Studio Albums/2017 - B-Sides And Rarities/10 Saturn Song.mp3
+1073:Beach House/Studio Albums/2017 - B-Sides And Rarities/11 Rain In Numbers.mp3
+1074:Beach House/Studio Albums/2017 - B-Sides And Rarities/12 I Do Not Care For the Winter Sun.mp3
+1075:Beach House/Studio Albums/2017 - B-Sides And Rarities/13 10 Mile Stereo (Cough Syrup Remix).mp3
+1076:Beach House/Studio Albums/2017 - B-Sides And Rarities/14 Wherever You Go.mp3
+1077:Beach House/Studio Albums/2018 - 7/01 Dark Spring.mp3
+1078:Beach House/Studio Albums/2018 - 7/02 Pay No Mind.mp3
+1079:Beach House/Studio Albums/2018 - 7/03 Lemon Glow.mp3
+1080:Beach House/Studio Albums/2018 - 7/04 L'inconnue.mp3
+1081:Beach House/Studio Albums/2018 - 7/05 Drunk in LA.mp3
+1082:Beach House/Studio Albums/2018 - 7/06 Dive.mp3
+1083:Beach House/Studio Albums/2018 - 7/07 Black Car.mp3
+1084:Beach House/Studio Albums/2018 - 7/08 Lose Your Smile.mp3
+1085:Beach House/Studio Albums/2018 - 7/09 Woo.mp3
+1086:Beach House/Studio Albums/2018 - 7/10 Girl of the Year.mp3
+1087:Beach House/Studio Albums/2018 - 7/11 Last Ride.mp3
 playlist_end

@@ -26,10 +26,10 @@ export PATH="$HOME/.local/bin:$PATH"
 precmd() { mommy -1 -s $? }
 
 # Aliases.
-alias ls='exa'
-alias ll='exa -l'
-alias la='exa -la'
-alias lsa='exa -a'
+alias ls='exa --icons'
+alias ll='exa -l --icons'
+alias la='exa -la --icons'
+alias lsa='exa -a --icons'
 alias mkdir='mkdir -p'
 alias rm='rm -rfv'
 alias cp='cp -rv'
@@ -46,7 +46,7 @@ alias bspwmconf='vim ~/.config/bspwm/bspwmrc'
 alias sxhkdconf='vim ~/.config/sxhkd/sxhkdrc'
 alias polybarconf='vim ~/.config/polybar'
 alias alacrittyconf='vim ~/.config/alacritty/alacritty.toml'
-alias zshconf='vim ~/.zshrc; source ~/.zshrc'
+alias zshconf='vim ~/.zshrc; source .zshrc'
 alias vimconf='vim ~/.vimrc'
 alias xinitrcconf='vim ~/.xinitrc'
 
