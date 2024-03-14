@@ -35,6 +35,8 @@ alias rm='rm -rfv'
 alias cp='cp -rv'
 alias ..='cd ..'
 alias ...='cd ...'
+alias neofetch='clear; uwufetch'
+alias egrep='egrep -e'
 alias poweroff='systemctl poweroff'
 alias reboot='systemctl reboot'
 alias drivesizecheck='sudo ncdu -x /'
@@ -52,7 +54,7 @@ alias xinitrcconf='vim ~/.xinitrc'
 
 # Customization.
 PROMPT="%B%F{green}%~ %B%F{blue} %F{white}"
-RPROMPT="%B%F{black}%n@%m - %*"
+RPROMPT="%B%F{black}%n@%m"
 
 # Custom Plugins.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
