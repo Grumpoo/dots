@@ -27,7 +27,7 @@ thunar-volman gvfs kvantum-qt5 kvantum materia-gtk-theme kvantum-theme-materia p
 papirus-folders zsh zsh-autosuggestions zsh-syntax-highlighting pulsemixer pavucontrol lxsession \
 network-manager-applet flameshot i3lock-color gtk-engine-murrine xarchiver ristretto qt5ct qt6ct \
 xfce4-clipman-plugin xfce4-power-manager emote xautolock gnome-disk-utility shellspec-bin mommy \
-vlc fuck exa
+vlc fuck exa uwufetch
 ```
 
 Now, we get the dotfiles themselves:
