@@ -54,7 +54,7 @@ alias xinitrcconf='vim ~/.xinitrc'
 
 # Customization.
 PROMPT="%B%F{green}%~ %B%F{blue} %F{white}"
-RPROMPT="%B%F{black}%n@%m"
+RPROMPT="%B%F{black}%n@%m - %*"
 
 # Custom Plugins.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
