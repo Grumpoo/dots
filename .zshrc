@@ -36,7 +36,6 @@ alias cp='cp -rv'
 alias ..='cd ..'
 alias ...='cd ...'
 alias neofetch='clear; uwufetch'
-alias egrep='egrep -e'
 alias poweroff='systemctl poweroff'
 alias reboot='systemctl reboot'
 alias drivesizecheck='sudo ncdu -x /'
@@ -53,7 +52,7 @@ alias vimconf='vim ~/.vimrc'
 alias xinitrcconf='vim ~/.xinitrc'
 
 # Customization.
-PROMPT="%B%F{green}%~ %B%F{blue} %F{white}"
+PROMPT="%B%F{green}%~ %B%F{blue}:3 %F{white}"
 RPROMPT="%B%F{black}%n@%m - %*"
 
 # Custom Plugins.

@@ -11,9 +11,7 @@ set relativenumber
 set ruler
 set termguicolors
 
-set clipboard+=unnamed
-set paste
-set go+=a 
+set clipboard=unnamedplus
 
 " NERDTree.
 nnoremap <leader>n :NERDTreeFocus<CR>
