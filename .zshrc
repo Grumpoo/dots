@@ -7,6 +7,7 @@ zstyle :compinstall filename '/home/grumpo/.zshrc'
 bindkey -v
 autoload -Uz compinit
 autoload -U promptinit && promptinit
+set -o PROMPT_SUBST
 compinit
 
 # Fix Ctrl/Alt + Left or Right movement.
@@ -21,9 +22,6 @@ export TERM=alacritty
 export EDITOR=code
 export BROWSER=firefox
 export PATH="$HOME/.local/bin:$PATH"
-
-# Mommy. :pleading-face:
-precmd() { mommy -1 -s $? }
 
 # Aliases.
 alias ls='exa --icons'
@@ -43,6 +41,7 @@ alias fixntfsdrive='sudo umount /dev/sdb1; sudo ntfsfix /dev/sdb1'
 alias vencordinstall='sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"'
 
 # Configs.
+alias mommyconf='vim ~/.config/mommy/config.sh'
 alias bspwmconf='vim ~/.config/bspwm/bspwmrc'
 alias sxhkdconf='vim ~/.config/sxhkd/sxhkdrc'
 alias polybarconf='vim ~/.config/polybar'
@@ -52,8 +51,9 @@ alias vimconf='vim ~/.vimrc'
 alias xinitrcconf='vim ~/.xinitrc'
 
 # Customization.
-PROMPT="%B%F{green}%~ %B%F{blue}:3 %F{white}"
-RPROMPT="%B%F{black}%n@%m - %*"
+PS1="%B%F{green}%~ %B%F{blue}:3 %F{white}"
+RPS1='$(mommy -1 -s $?)' # important.
+#RPROMPT="%B%F{black}%n@%m - %*"
 
 # Custom Plugins.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

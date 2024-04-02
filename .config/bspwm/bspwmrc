@@ -18,7 +18,6 @@ mpd &
 xrdb -merge ~/.Xresources &
 xsetroot -cursor_name left_ptr &
 $HOME/.config/polybar/launch.sh &
-$HOME/.config/bspwm/masterlayout.sh &
 
 ### MONITORS ###
 bspc monitor DP-0 -d 1 2 3 4 5 6 7 8 9
@@ -45,15 +44,13 @@ bspc config normal_border_color  "#282828"
 bspc config active_border_color  "#282828"
 
 ### RULES ###
-bspc config external_rules_command  ~/.config/bspwm/external_rules.sh
-
 # Main floating.
 bspc rule -a pop-up state=floating
 bspc rule -a bubble state=floating
 bspc rule -a task_dialog state=floating
 bspc rule -a Preferences state=floating
 bspc rule -a dialog state=floating
-bspc rule -a menu statefloating
+bspc rule -a menu state=floating
 
 # Custom rules.
 bspc rule -a steam state=floating
@@ -67,3 +64,6 @@ bspc rule -a kcalc state=floating
 bspc rule -a "veadotube mini.x86_64" state=floating
 bspc rule -a Anydesk state=floating
 bspc rule -a zenity state=floating
+bspc rule -a qBittorrent state=floating
+bspc rule -a obs state=floating
+bspc rule -a Lutris state=floating

@@ -3,9 +3,9 @@
 pkill polybar
 
 if type "xrandr"; then
-  for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-    MONITOR=$m polybar example -reload &
-  done
+	for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
+		MONITOR=$m polybar main -reload &
+	done
 else
-  polybar example -reload &
+	polybar main -reload &
 fi

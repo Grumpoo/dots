@@ -5,7 +5,7 @@ super + Return
 
 # Rofi (drun, run, powermenu).
 super + d ; {d,shift + d,x}
-	rofi -show {drun -show-icons,run,p -modi p:powermenu}
+	rofi -show {drun -show-icons -theme dmenu,run -theme dmenu,p -modi p:powermenu -theme dmenu}
 
 # Window list (using Rofi).
 alt + Tab
@@ -17,15 +17,15 @@ super + b
 
 # File manager.
 super + {e,shift + e}
-	  {thunar, alacritty -e ranger}
+	{thunar, alacritty -e ranger}
 
 # Audio mixer.
 super + {p,shift + p}
-	  {alacritty -e pulsemixer, pavucontrol}
+	{alacritty -e pulsemixer, pavucontrol}
 
 # Clipboard.
 super + v
-	  xfce4-popup-clipman
+	xfce4-popup-clipman
 
 # Screenshot (region).
 ctrl + Print
@@ -45,7 +45,7 @@ super + o
 
 # Lock the screen.
 ctrl + alt + shift + l
-	 screenlock
+	screenlock
 
 # Emoji.
 super + semicolon
@@ -125,7 +125,7 @@ super + {t,shift + f,f}
 ### FOCUS/SWAP ###
 # Focus/send to workspaces.
 super + {_,shift + }{1-9,0,minus,equal}
-	  bspc {desktop -f, node -d} '^{1-9,10,11,12}'
+	bspc {desktop -f, node -d} '^{1-9,10,11,12}'
 
 
 ### MINIMIZE ###
@@ -152,7 +152,7 @@ super + ctrl + {h,j,k,l}
 
 # Focus/move the window.
 super + {_,shift + }{h,j,k,l}
-	bspc node -{f, s} {west, south, north, east}
+	bspc node -{f,s} {west, south, north, east}
 
 # Rotate nodes.
 ctrl + super + r

@@ -36,10 +36,11 @@ call plug#end()
 set termguicolors
 colorscheme base16-default-dark
 let base16colorspace=256
+hi Comment cterm=italic
 
 " Lightline.
 set noshowmode
 set laststatus=2
 let g:lightline = {
-    \ 'colorscheme': substitute(g:colors_name, '-', '_', 'g')
+   \ 'colorscheme': substitute(g:colors_name, '-', '_', 'g')
     \ }

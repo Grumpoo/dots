@@ -39,6 +39,7 @@
 }
 #element {
     padding: 10px 8px;
+    spacing: 10px;
 }
 #element selected {
     background-color: @selected-normal-background;
