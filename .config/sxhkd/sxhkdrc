@@ -91,6 +91,10 @@ XF86Audio{Next,Prev}
 XF86AudioPlay
 	mpc toggle
 
+# Stop the song.
+XF86AudioStop
+	mpc stop
+
 
 ### BSPWM ###
 # Restart bspwm.
@@ -154,7 +158,10 @@ super + ctrl + {h,j,k,l}
 super + {_,shift + }{h,j,k,l}
 	bspc node -{f,s} {west, south, north, east}
 
-# Rotate nodes.
+## Rotate nodes.
+# Clockwise.
 ctrl + super + r
 	bspc node @focused:/ -R 90
-
+# Counter-clockwise.
+ctrl + super + alt + r
+	bspc node @focused:/ -R -90
