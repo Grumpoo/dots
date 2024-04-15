@@ -1,6 +1,6 @@
 #!/bin/bash
 
-paru; doas flatpak update; doas bootctl update; clear
+paru; sudo flatpak update; sudo bootctl update; clear
 
 while true; do
 	read -p "Sistēma atjaunināta! Vai tu gribi restartēt savu datoru? (y/n) " yn
