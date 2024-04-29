@@ -28,7 +28,7 @@ super + v
 	xfce4-popup-clipman
 
 # Screenshot (region).
-ctrl + Print
+super + shift + s
 	flameshot gui
 
 # Screenshot (full).
