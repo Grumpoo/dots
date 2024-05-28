@@ -5,7 +5,7 @@ super + Return
 
 # Rofi (drun, run, powermenu).
 super + d ; {d,shift + d,x}
-	rofi -show {drun -show-icons -theme dmenu,run -theme dmenu,p -modi p:powermenu -theme dmenu}
+	rofi -show {drun -show-icons -theme dmenu,run -show-icons -theme dmenu,p -modi p:powermenu -theme dmenu}
 
 # Window list (using Rofi).
 alt + Tab
@@ -41,7 +41,7 @@ super + shift + v
 
 # OBS.
 super + o
-	flatpak run com.obsproject.Studio
+	obs
 
 # Lock the screen.
 ctrl + alt + shift + l

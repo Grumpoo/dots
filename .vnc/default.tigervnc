@@ -1,6 +1,6 @@
 TigerVNC Configuration file Version 1.0
 
-ServerName=192.168.0.243:1
+ServerName=34.171.215.241:5900
 X509CA=/home/grumpo/.vnc/x509_ca.pem
 X509CRL=/home/grumpo/.vnc/x509_crl.pem
 SecurityTypes=X509Plain,TLSPlain,X509Vnc,TLSVnc,X509None,TLSNone,RA2,RA2_256,RA2ne,RA2ne_256,VncAuth,None
