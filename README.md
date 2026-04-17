@@ -1,5 +1,5 @@
 ## What do I use?
-* Distro: Arch Linux (best distro ong)
+* Distro: Arch Linux (best distro)
 * Window Manager: bspwm
 * Terminal Emulator: Alacritty
 * Audio Server: Pipewire (because I play osu! lol)
