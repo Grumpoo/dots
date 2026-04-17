@@ -13,7 +13,7 @@ The following rice has a dual monitor configuration, so you need to change the c
 
 The same thing goes for the Latvian text and localization in this rice, you may need Photoshop skills to change the login screen text for SLiM.
 
-Also, for the love of God, <b>don't use my Pipewire config</b>, unless you also play <a href=https://osu.ppy.sh>osu!</a>, a free to play rhythm game that works better on Linux than it does on Windows, because of audio latency (lmao).
+Also, <b>please don't use my Pipewire config</b>, unless you also play <a href=https://osu.ppy.sh>osu!</a>, a free to play rhythm game that works better on Linux than it does on Windows, because of audio latency (lmao).
 
 ## Installation.
 
@@ -37,7 +37,7 @@ git clone https://github.com/grumpoo/dots
 
 </details>
 
-Once we have all the shit downloaded/installed, it's time for <b>step 2</b>.
+Once we have all the stuff downloaded/installed, it's time for <b>step 2</b>.
 
 <details>
 <summary>Copying the files to the appropriate locations:</summary>
